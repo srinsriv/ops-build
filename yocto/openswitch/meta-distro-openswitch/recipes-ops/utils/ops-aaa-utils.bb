@@ -9,7 +9,7 @@ RDEPENDS_${PN} = "python-argparse python-json python-ops-ovsdb python-distribute
 
 BRANCH ?= "${OPS_REPO_BRANCH}"
 
-SRC_URI = "https://github.com/srinsriv/ops-aaa-utils; \
+SRC_URI = "git://github.com/srinsriv/ops-aaa-utils;protocol=http; \
            file://aaautils.service \
            file://server \
            file://useradd \
