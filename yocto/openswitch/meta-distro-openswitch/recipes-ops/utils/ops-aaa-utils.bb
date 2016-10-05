@@ -9,13 +9,13 @@ RDEPENDS_${PN} = "python-argparse python-json python-ops-ovsdb python-distribute
 
 BRANCH ?= "${OPS_REPO_BRANCH}"
 
-SRC_URI = "${OPS_REPO_BASE_URL}/ops-aaa-utils;protocol=${OPS_REPO_PROTOCOL};branch=${BRANCH} \
+SRC_URI = "https://github.com/srinsriv/ops-aaa-utils; \
            file://aaautils.service \
            file://server \
            file://useradd \
          "
 
-SRCREV = "c0926a5767a047f56b251f49ff44cbac9fe2e952"
+SRCREV= ${AUTOREV}
 
 # When using AUTOREV, we need to force the package version to the revision of git
 # in order to avoid stale shared states.
