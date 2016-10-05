@@ -15,7 +15,7 @@ SRC_URI = "https://github.com/srinsriv/ops-aaa-utils; \
            file://useradd \
          "
 
-SRCREV= ${AUTOREV}
+SRCREV= "${AUTOREV}"
 
 # When using AUTOREV, we need to force the package version to the revision of git
 # in order to avoid stale shared states.
